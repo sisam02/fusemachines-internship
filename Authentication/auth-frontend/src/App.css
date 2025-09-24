@@ -1,0 +1,151 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fdfdfd, #f7fafc); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-top: 0.4rem solid #4fd1c5; 
+  transition: transform 0.2s ease;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+}
+
+h2 {
+  margin: 1rem 0;
+  text-align: center;
+  color: #2c3e50; 
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+input {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #4fd1c5; 
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.2);
+}
+
+button {
+  background-color: #f6ad55; 
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ed8936; 
+  transform: translateY(-1px);
+}
+
+span {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+span a {
+  text-decoration: none;
+  color: #4fd1c5; 
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+span a:hover {
+  color: #319795;
+}
+
+
+.private {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #e6fffa, #fffaf0); 
+  color: #2d3748;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.private h2 {
+  color: #2c7a7b;
+}
+
+.private pre {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-size: 0.9rem;
+  max-width: 400px;
+  text-align: left;
+  overflow-x: auto;
+}
+
+.private button {
+  background-color: #f6ad55;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.private button:hover {
+  background-color: #ed8936;
+  transform: translateY(-2px);
+}
